@@ -65,9 +65,9 @@ public class Project {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the html table to be displayed
-			output = "<table border='1'><tr><th>Project Code</th><th>Project Name</th>" + "<th>Project Price</th>"
-					+ "<th>Project Description</th>"
-					+ "<th>Update</th><th>Remove</th></tr>";
+			output = "<table border='1' class='table table-bordered '><tr><th class='text-center'>Project Code</th><th class='text-center'>Project Name</th>" + "<th class='text-center'>Project Price</th>"
+					+ "<th class='text-center'>Project Description</th>"
+					+ "<th class='text-center'>Update</th><th class='text-center'>Remove</th></tr>";
 
 			String query = "select * from project";
 			Statement stmt = con.createStatement();

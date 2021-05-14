@@ -11,15 +11,16 @@
 <script src="Components/jquery-3.2.1.min.js"></script>
 <script src="Components/Project.js"></script>
 </head>
-<body>	<center>
+<body>	
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
-			<h1>Project Management</h1>
-				<form id="formProject" name="formProject" method="post" action="project.jsp">
+			<div class="col-12">
+			<center><h1  style="color:#0000ff;">Project Management</h1></center>
+			<div class="offset-xl-3 col-xl-6">
+				<form id="formProject" name="formProject" method="post" action="project.jsp" class="form-group mt-3">
 
 					Project Code: <input id="projectCode" name="projectCode" type="text"
-						class="form-control form-control-lg"><br> Project Name:
+						class="form-control form-control-lg" ><br> Project Name:
 					<input id="projectName" name="projectName" type="text"
 						class="form-control form-control-lg"><br> Project Price:<input
 						id="projectPrice" name="projectPrice" type="text"
@@ -28,13 +29,13 @@
 					Project Description: <input id="projectDescription"
 						name="projectDescription" type="text"
 						class="form-control form-control-lg"><br> <input
-						id="btnSave" name="btnSave" type="button" value="Save"
-						class="btn btn-primary form-control-sm"> <input
+						id="btnSave" name="btnSave" type="button" value="Save" class="btn form-control btn-primary"
+						class="btn btn-primary form-control-sm" > <input
 						type="hidden" id="hidProjectIDSave" name="hidProjectIDSave"
 						value="">
 
 				</form>
-
+				</div><center>
 				<div id="alertSuccess" class="alert alert-success"></div>
 				<div id="alertError" class="alert alert-danger"></div>
 				<br>
@@ -43,9 +44,9 @@
 						Project projectObj = new Project();
 								out.print(projectObj.readProject());
 					%>
-				</div>
+				</div></center>
 			</div>
 		</div>
-	</div></center>
+	</div>
 </body>
 </html>
