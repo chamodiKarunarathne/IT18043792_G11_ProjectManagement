@@ -11,11 +11,11 @@
 <script src="Components/jquery-3.2.1.min.js"></script>
 <script src="Components/Project.js"></script>
 </head>
-<body>
+<body>	<center>
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
-				<h1>Project Management</h1>
+			<h1>Project Management</h1>
 				<form id="formProject" name="formProject" method="post" action="project.jsp">
 
 					Project Code: <input id="projectCode" name="projectCode" type="text"
@@ -46,6 +46,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div></center>
 </body>
 </html>
